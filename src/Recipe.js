@@ -6,8 +6,8 @@ function Recipe({data, deleteRecipe}){
       <td>{data.name}</td>
       <td>{data.cuisine}</td>
       <td><img src={data.photo}/></td>
-      <td>{data.ingredients}</td>
-      <td>{data.preparation}</td>
+      <td className="content_td"><p>{data.ingredients}</p></td>
+      <td className="content_td"><p>{data.preparation}</p></td>
       <td><button name="delete"
             className="btn btn-danger" 
             onClick={()=> deleteRecipe(data)}>Delete</button></td>
