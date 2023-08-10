@@ -6,13 +6,7 @@ import RecipeData from "./RecipeData"
 
 function App() {
   const [recipes, setRecipes] = useState(RecipeData);
-
-  // TODO: Add the ability for the <RecipeList /> component to list and delete an existing recipe.
-  
-
-  // TODO: Add the ability for the <RecipeCreate /> component to create new recipes.
-
-    function recipeCreate(newRecipe){
+  function recipeCreate(newRecipe){
     //add one new recipe
     setRecipes([
       ...recipes,
@@ -20,10 +14,10 @@ function App() {
     ])
   }
   
-    function deleteRecipe(recipeToDelete){
-    let filteredRecipes = recipes.filter(recipe => recipe !== recipeToDelete);
-    setRecipes(filteredRecipes)
-  }
+  function deleteRecipe(recipeToDelete){
+  let filteredRecipes = recipes.filter(recipe => recipe !== recipeToDelete);
+  setRecipes(filteredRecipes)
+}
   
   return (
     <div className="App">
