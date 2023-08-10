@@ -12,8 +12,7 @@ function Recipe({data, deleteRecipe}){
             className="btn btn-danger" 
             onClick={()=> deleteRecipe(data)}>Delete</button></td>
     </tr>
-   )
-    
+   )    
 }
 
 export default Recipe

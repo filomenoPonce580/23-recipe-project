@@ -7,7 +7,7 @@ import RecipeData from "./RecipeData"
 function App() {
   const [recipes, setRecipes] = useState(RecipeData);
   function recipeCreate(newRecipe){
-    //add one new recipe
+    //adds new recipe
     setRecipes([
       ...recipes,
       newRecipe
@@ -21,7 +21,7 @@ function App() {
   
   return (
     <div className="App">
-      <header><h1>Delicious Food Recipes</h1></header>
+      <header><h1>Dish Diaries</h1></header>
       <RecipeList recipes={recipes} deleteRecipe={deleteRecipe}/>
       <RecipeCreate createRecipe={recipeCreate}/>
     </div>

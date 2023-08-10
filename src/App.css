@@ -17,6 +17,7 @@ header {
 
 html {
   font-family: 'helvetica neue', sans-serif;
+  background-color: rgba(196, 192, 188, 0.162);
 }
 
 thead th, tfoot th {
@@ -41,7 +42,12 @@ h1{
   font-family: 'Lora', serif;
   text-align: center;
   font-size: 64px;
+
+}  
+h1, th{
+  color: rgb(56, 49, 39);  
 }
+
 /* table */
 
 table {
@@ -76,11 +82,12 @@ th{
 }
 
 th:nth-child(-n+3){
-  width: 10%;
+  width: 11%;
 }
 
-
-
+th:last-child{
+  width: 15%;
+}
 
 
 /* Column size for tbody */
@@ -90,7 +97,13 @@ td{
 }
 
 td:nth-child(-n+3){
-  width: 10%;
+  width: 11%;
 }
 
+td:last-child{
+  width: 15%;
+}
 
+input{
+  width: 100%;
+}
