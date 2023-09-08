@@ -5,8 +5,8 @@ This project is a React-based recipe tracking app. It allows a user to add new r
 Clone this repository to your local machine.
 
 Navigate to the project directory and run the following command to install the required dependencies:  
-'npm install'
+`npm install`
 
 To start the app, run the following command:  
-'npm start'  
+`npm start`  
 This will launch the app in your browser at http://localhost:3000/.
